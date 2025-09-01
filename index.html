@@ -1,281 +1,290 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Playbook — 1º Preparatoria — Misión M01 - El futuro del trabajo con IA</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión M01: El futuro del trabajo con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<header>
-<h1><span class="book-icon">📋</span> <strong>Playbook Misión M01: El futuro del trabajo con IA</strong></h1>
-<div class="header-widgets">
-<div class="timer-container">
-<span id="timer">⏱️ 00:00</span>
-<button id="startStop">Start</button>
-<button id="reset">Reset</button>
-</div>
-<div class="theme-toggle">
-<i class="fas fa-sun"></i>
-<label class="switch">
-<input type="checkbox" id="theme-toggle-input">
-<span class="slider round"></span>
-</label>
-<i class="fas fa-moon"></i>
-</div>
-</div>
-</header>
-<div class="main-container">
-<aside class="activity-list">
-<h2>Actividades</h2>
-<ul>
-<li><a href="#activity-0">De un Vistazo</a></li>
-<li><a href="#activity-1">1) Saludo Interactivo con IA</a></li>
-<li><a href="#activity-2">2) “I Can Statement” + Desafío</a></li>
-<li><a href="#activity-3">3) AI GYM</a></li>
-<li><a href="#activity-4">4) Brain Spark</a></li>
-<li><a href="#activity-5">5) GNIUS STORM</a></li>
-</ul>
-<div class="sidebar-info">
-<p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-<p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-</div>
-</aside>
-<main class="content">
-<div class="progress-bar">
-<div class="progress"></div>
-</div>
-<button id="toggle-dialogues">Mostrar todos los diálogos</button>
-<!-- 0) De un Vistazo -->
-<section class="activity-card" id="activity-0">
-<h2 class="activity-title">📝 De un Vistazo: Misión M01 - El futuro del trabajo con IA</h2>
-<p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
-<div class="overview">
-<section class="overview-block">
-<h3>Objetivos e “I Can”</h3>
-<ul>
-<li>Puedo comprender cómo la IA redefine las profesiones y el valor de la ingeniería de prompts.</li>
-<li>Puedo diseñar un "Kit de Inicio de IA" para una profesión, aplicando principios de ingeniería de prompts para tareas clave.</li>
-</ul>
-</section>
-<section class="overview-block">
-<h3>Secuencia y tiempos</h3>
-<ol>
-<li>Saludo Interactivo con IA — 3 min</li>
-<li>“I Can” + Desafío — 5–7 min</li>
-<li>AI GYM — 10–12 min</li>
-<li>Brain Spark — 17–20 min</li>
-<li>GNIUS STORM — 5 min</li>
-</ol>
-</section>
-<section class="overview-block">
-<h3>Entregable del Micro-Proyecto</h3>
-<ul>
-<li>Un "Kit de Inicio de IA" para una profesión específica, que incluye una lista de prompts claros y accionables para tareas clave.</li>
-</ul>
-</section>
-<section class="overview-block">
-<h3>Criterios de calidad</h3>
-<ul>
-<li>Los prompts son claros, específicos y accionables.</li>
-<li>Los prompts resuelven tareas clave de la profesión elegida.</li>
-<li>El "Kit de Inicio de IA" refleja la IA como socio que amplifica la creatividad humana.</li>
-<li>Se utilizan herramientas LLM (ChatGPT, Claude, Gemini) de forma efectiva.</li>
-</ul>
-</section>
-<section class="overview-block">
-<h3>Materiales y preparación</h3>
-<ul>
-<li>Proyector e internet</li>
-<li>Acceso a LLM y herramientas: ChatGPT / Claude / Gemini</li>
-<li>Plantilla de ejemplo lista</li>
-</ul>
-</section>
-</div>
-</section>
-<!-- 1) Saludo Interactivo con IA -->
-<section class="activity-card" id="activity-1">
-<h2 class="activity-title">Saludo Interactivo con IA</h2>
-<p class="activity-purpose">Establecer tono profesional, conectar con el tema y activar a Xolo con perfil e intereses.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
-<p class="step-instructions">Proyectar Diapositiva 3. Presenta el tema y el valor profesional.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Equipo: hoy exploraremos cómo la Inteligencia Artificial está redefiniendo el futuro del trabajo y cómo podemos colaborar eficazmente con ella. Nuestro objetivo es que diseñen un 'Kit de Inicio de IA' para una profesión, demostrando cómo la IA puede amplificar las capacidades humanas.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Activación con Xolo</h3>
-<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía saludo con perfil de aprendizaje e intereses + referencia a la misión.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron los criterios de hoy y sigan sus indicaciones personalizadas.</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- 2) “I Can” + Desafío -->
-<section class="activity-card" id="activity-2">
-<h2 class="activity-title">“I Can Statement” + Desafío</h2>
-<p class="activity-purpose">Explicitar metas y presentar el reto que guiará la producción.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Presenta el reto</h3>
-<p class="step-instructions">Proyectar Diapositiva 4. Describe el reto y la meta observable.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">El reto es diseñar un 'Kit de Inicio de IA' para una profesión de su elección, que contenga prompts efectivos para tareas clave. Evaluaremos la claridad y especificidad de los prompts, y cómo demuestran el concepto de 'aumento' de la capacidad humana por la IA.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
-<p class="step-instructions">Proyectar Diapositiva 5. Cada estudiante redacta 1 “I Can” concreto alineado al entregable.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Formula tu 'Puedo…' en 1 frase: acción + criterio + resultado. Por ejemplo: 'Puedo diseñar prompts que resuelvan problemas específicos de mi profesión elegida, utilizando la IA como una herramienta de aumento de productividad.'</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- 3) AI GYM -->
-<section class="activity-card" id="activity-3">
-<h2 class="activity-title">AI GYM</h2>
-<p class="activity-purpose">Formalizar criterios y/o framework antes de producir.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Marco del día</h3>
-<p class="step-instructions">Proyectar Diapositiva 6. Introduce el framework: ingeniería de prompts y Aumento vs. Reemplazo.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Hoy nos enfocaremos en la ingeniería de prompts y el concepto de 'Aumento vs. Reemplazo'. Este marco agrega valor porque les permite transformar una idea vaga en una instrucción precisa para la IA, convirtiéndola en un socio que amplifica sus capacidades, no que los sustituye. Eviten prompts genéricos o ambiguos. Usen la especificidad y el contexto para validar resultados.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Mini-demostración</h3>
-<p class="step-instructions">Proyectar Diapositiva 7. Construye ejemplo mínimo de prompt vago vs. específico.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Observen cómo un prompt vago como 'Dame ideas para un negocio' difiere de uno específico como 'Actúa como un consultor de negocios. Propón 3 ideas innovadoras para una cafetería en un campus universitario, enfocándote en sostenibilidad y tecnología, y justifica cada una en 50 palabras.' Verifica con: ¿El prompt es claro? ¿La IA puede actuar con un rol definido?</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 3 — Check rápido</h3>
-<p class="step-instructions">Proyectar Diapositiva 8. Verifica comprensión con 2 preguntas breves.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Pregunta 1: ¿Un prompt debe ser lo más específico posible? (Sí/No). Pregunta 2: ¿Qué significa que la IA 'aumenta' nuestra capacidad?</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- 4) Brain Spark -->
-<section class="activity-card" id="activity-4">
-<h2 class="activity-title">Brain Spark</h2>
-<p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Producción</h3>
-<p class="step-instructions">Proyectar Diapositiva 9. Indica el producto específico (Kit de Inicio de IA con prompts) y checklist de calidad. Tiempo de trabajo autónomo.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">N/A</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Iteración</h3>
-<p class="step-instructions">Proyectar Diapositiva 10. Pide una mejora concreta: refinar prompts para mayor especificidad o para incluir un rol/persona para la IA.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Antes de cerrar: valida que cada prompt incluya un rol para la IA y un formato de salida deseado. Si no se cumple, ajusta y vuelve a probar con tu LLM.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 3 — Evidencia</h3>
-<p class="step-instructions">Proyectar Diapositiva 11. Solicita evidencia: documento con el "Kit de Inicio de IA".</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Sube tu 'Kit de Inicio de IA' al canal indicado. Nombra tu archivo: M01_KitIA_[TuNombre]_[ProfesionElegida].pdf.</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- 5) GNIUS STORM -->
-<section class="activity-card" id="activity-5">
-<h2 class="activity-title">GNIUS STORM</h2>
-<p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Showcase relámpago</h3>
-<p class="step-instructions">2–3 equipos/personas muestran evidencia clave (30–45 s c/u).</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Describe tu 'Kit de Inicio de IA' en 30 segundos: qué profesión elegiste, un prompt clave y cómo demuestra el aumento de la IA.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
-<p class="step-instructions">Proyectar Diapositiva 12. Entrega síntesis: 1 aprendizaje clave + 1 criterio que más impacto tuvo + siguiente paso fuera del aula.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Síntesis: Hoy aprendimos que la ingeniería de prompts es la clave para desatar el potencial de la IA como socio. El criterio clave que marcó la diferencia fue la especificidad y la asignación de roles a la IA en nuestros prompts. Siguiente paso aplicado: Utilicen esta habilidad en cualquier tarea que requiera investigación, redacción o ideación, transformando sus interacciones con la IA de búsquedas pasivas a colaboraciones activas y dirigidas.</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-</main>
-</div>
-<script src="script.js"></script>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión M01: El futuro del trabajo con IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+            
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión M01 - El futuro del trabajo con IA</h2>
+                <p class="overview-subtitle">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Puedo comprender cómo la IA redefine las profesiones y el valor de la ingeniería de prompts.</li>
+                                        <li>Puedo diseñar un "Kit de Inicio de IA" para una profesión, aplicando principios de ingeniería de prompts para tareas clave.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> 3 min</li>
+                                        <li><strong class="tactic-highlight">⚡“I Can Statement” + Desafío:</strong> 5–7 min</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> 10–12 min</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> 17–20 min</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> 5 min</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un "Kit de Inicio de IA" para una profesión específica, que incluye una lista de prompts claros y accionables para tareas clave.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector e internet.</li>
+                                        <li>Acceso a LLM: ChatGPT, Claude, Gemini.</li>
+                                        <li>Plantilla de ejemplo lista.</li>
+                                    </ul>
+                                    <strong>Criterios de Calidad:</strong>
+                                    <ul>
+                                        <li>Los prompts son claros, específicos y accionables.</li>
+                                        <li>Los prompts resuelven tareas clave de la profesión elegida.</li>
+                                        <li>El "Kit de Inicio de IA" refleja la IA como socio que amplifica la creatividad humana.</li>
+                                        <li>Se utilizan herramientas LLM (ChatGPT, Claude, Gemini) de forma efectiva.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo Interactivo con IA ⏰ 3 minutos</h2>
+                <p>Establecer tono profesional, conectar con el tema y activar a Xolo con perfil e intereses.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y foco ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 1) Presenta el tema y el valor profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Equipo: hoy exploraremos cómo la Inteligencia Artificial está redefiniendo el futuro del trabajo y cómo podemos colaborar eficazmente con ella. Nuestro objetivo es que diseñen un 'Kit de Inicio de IA' para una profesión, demostrando cómo la IA puede amplificar las capacidades humanas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación con Xolo ⏰ 2 minutos</h3>
+                            <p>Cada estudiante abre su chat con Xolo y envía saludo con perfil de aprendizaje e intereses + referencia a la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, vamos a activar a nuestro asistente de IA, Xolo. Envíenle un saludo con su perfil de aprendizaje e intereses, y hagan referencia a la misión. Por ejemplo, podrían escribir: 'Hola Xolo, soy [Nombre]. Me interesa la música y la programación, y mi estilo de aprendizaje es muy visual. ¡Listo para la misión M01!'</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: “I Can Statement” + Desafío ⏰ 5-7 minutos</h2>
+                <p>Explicitar metas y presentar el reto que guiará la producción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presenta el reto ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 2) Describe el reto y la meta observable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El reto es diseñar un 'Kit de Inicio de IA' para una profesión de su elección, que contenga prompts efectivos para tareas clave. Evaluaremos la claridad y especificidad de los prompts, y cómo demuestran el concepto de 'aumento' de la capacidad humana por la IA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Escribe tu “I Can” ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Cada estudiante redacta 1 “I Can” concreto alineado al entregable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Formula tu 'Puedo…' en 1 frase: acción + criterio + resultado. Por ejemplo: 'Puedo diseñar prompts que resuelvan problemas específicos de mi profesión elegida, utilizando la IA como una herramienta de aumento de productividad.'</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 10-12 minutos</h2>
+                <p>Formalizar criterios y/o framework antes de producir.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Marco del día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Introduce el framework: ingeniería de prompts y Aumento vs. Reemplazo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy nos enfocaremos en la ingeniería de prompts y el concepto de 'Aumento vs. Reemplazo'. Este marco agrega valor porque les permite transformar una idea vaga en una instrucción precisa para la IA, convirtiéndola en un socio que amplifica sus capacidades, no que los sustituye. Eviten prompts genéricos o ambiguos. Usen la especificidad y el contexto para validar resultados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Mini-demostración ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Construye ejemplo mínimo de prompt vago vs. específico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Observen cómo un prompt vago como 'Dame ideas para un negocio' difiere de uno específico como 'Actúa como un consultor de negocios. Propón 3 ideas innovadoras para una cafetería en un campus universitario, enfocándote en sostenibilidad y tecnología, y justifica cada una en 50 palabras.' Verifica con: ¿El prompt es claro? ¿La IA puede actuar con un rol definido?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Check rápido ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Verifica comprensión con 2 preguntas breves.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Pregunta 1: ¿Un prompt debe ser lo más específico posible? (Sí/No). Pregunta 2: ¿Qué significa que la IA 'aumenta' nuestra capacidad?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Brain Spark ⏰ 17-20 minutos</h2>
+                <p>Producir el entregable tangible del Micro-Proyecto.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Producción ⏰ 12 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Indica el producto específico (Kit de Inicio de IA con prompts) y checklist de calidad. Tiempo de trabajo autónomo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">N/A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Iteración ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Pide una mejora concreta: refinar prompts para mayor especificidad o para incluir un rol/persona para la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de cerrar: valida que cada prompt incluya un rol para la IA y un formato de salida deseado. Si no se cumple, ajusta y vuelve a probar con tu LLM. Les recomiendo usar ChatGPT (GPT-3.5 o 4), Claude o Gemini, ya que son excelentes para este tipo de tareas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Evidencia ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Solicita evidencia: documento con el "Kit de Inicio de IA".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Sube tu 'Kit de Inicio de IA' al canal indicado. Nombra tu archivo: M01_KitIA_[NombreApellido]_[ProfesionElegida].pdf.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: GNIUS STORM ⏰ 5 minutos</h2>
+                <p>Exhibir resultados y cerrar con síntesis accionable.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Showcase relámpago ⏰ 3 minutos</h3>
+                            <p>2–3 equipos/personas muestran evidencia clave (30–45 s c/u).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Describe tu 'Kit de Inicio de IA' en 30 segundos: qué profesión elegiste, un prompt clave y cómo demuestra el aumento de la IA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Cierre ejecutivo ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Entrega síntesis: 1 aprendizaje clave + 1 criterio que más impacto tuvo + siguiente paso fuera del aula.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Síntesis: Hoy aprendimos que la ingeniería de prompts es la clave para desatar el potencial de la IA como socio. El criterio clave que marcó la diferencia fue la especificidad y la asignación de roles a la IA en nuestros prompts. Siguiente paso aplicado: Utilicen esta habilidad en cualquier tarea que requiera investigación, redacción o ideación, transformando sus interacciones con la IA de búsquedas pasivas a colaboraciones activas y dirigidas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
