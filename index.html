@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 1 - 1ro Preparatoria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-HS1-TM1</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 1 - 1ro Preparatoria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 1 - 1o de Preparatoria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,248 +38,402 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-            
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Misión M01 - El futuro del trabajo con IA</h2>
-                <p class="overview-subtitle">Resumen de objetivos, secuencia y entregables de la sesión.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <ul>
-                                        <li>Puedo comprender cómo la IA redefine las profesiones y el valor de la ingeniería de prompts.</li>
-                                        <li>Puedo diseñar un "Kit de Inicio de IA" para una profesión, aplicando principios de ingeniería de prompts para tareas clave.</li>
-                                        <li>Objetivo general de la sesión: Comprender y aplicar la ingeniería de prompts para utilizar la IA como una herramienta de aumento de capacidades, en lugar de reemplazo, en un contexto profesional.</li>
-                                    </ul>
-                                    <strong>Secuencia Didáctica:</strong>
-                                    <ul>
-                                        <li><strong>Actividad 1:</strong> Saludo Interactivo con IA (3 min)</li>
-                                        <li><strong>Actividad 2:</strong> “I Can Statement” + Desafío (5–7 min)</li>
-                                        <li><strong>Actividad 3:</strong> AI GYM (10–12 min)</li>
-                                        <li><strong>Actividad 4:</strong> Brain Spark (17–20 min)</li>
-                                        <li><strong>Actividad 5:</strong> GNIUS STORM (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un "Kit de Inicio de IA" para una profesión específica, que incluye una lista de prompts claros y accionables para tareas clave.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector e internet.</li>
-                                        <li>Acceso a LLM: ChatGPT, Claude, Gemini.</li>
-                                        <li>Plantilla de ejemplo lista.</li>
-                                        <li>Presentación (10 diapositivas).</li>
-                                    </ul>
-                                    <strong>Criterios de Calidad:</strong>
-                                    <ul>
-                                        <li>Los prompts son claros, específicos y accionables.</li>
-                                        <li>Los prompts resuelven tareas clave de la profesión elegida.</li>
-                                        <li>El "Kit de Inicio de IA" refleja la IA como socio que amplifica la creatividad humana.</li>
-                                        <li>Se utilizan herramientas LLM (ChatGPT, Claude, Gemini) de forma efectiva.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar ChatGPT, Gemini o Claude para redactar y refinar prompts de forma profesional y comprender el concepto de aumento vs. reemplazo y el rol del criterio humano en el uso ético de la IA.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué significa ingeniería de prompts como habilidad para traducir una intención humana en una instrucción clara. Analicemos la diferencia real entre un prompt vago y uno específico (tarea, contexto, restricciones y resultado esperado). Guíame para reescribir una intención vaga en 2 versiones: una “aceptable” y otra “profesional”, y ayúdame a identificar por qué la segunda es más útil. Finalmente, reflexionemos sobre Aumento vs. Reemplazo: ¿qué parte del trabajo debe quedar en manos humanas (criterio, responsabilidad, propósito) aunque use IA?</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Aumento vs. Reemplazo: La idea de que la IA debe potenciar nuestro trabajo (aumento) en lugar de sustituir nuestro pensamiento crítico y responsabilidad (reemplazo).</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar ingeniería de prompts para transformar ideas vagas en instrucciones precisas con contexto y restricciones.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes niveles de especificidad y roles asignados a la IA para observar cambios en la calidad.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Dispositivo con acceso a internet (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a ChatGPT (https://chatgpt.com/), Gemini (https://gemini.google.com/) o Claude (https://claude.ai/)</label>
+                        <label><input type="checkbox"> Documento compartido o cuaderno para registro de prompts</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa interacción con modelos de lenguaje (LLMs) mediante lenguaje natural</label>
+                        <label><input type="checkbox"> 📋 Para usar IA: Ingresa a la URL de la plataforma elegida, inicia sesión y abre un nuevo chat.</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No compartir datos personales sensibles con la IA, verificar siempre las fuentes y cerrar sesiones en dispositivos públicos.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre ingeniería de prompts y la diferencia entre aumento y reemplazo (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si la IA da respuestas genéricas:</strong> Pide a los alumnos que añadan más contexto o un rol específico (ej. "Actúa como un experto en...").</li>
+                            <li><strong>Si hay problemas de conexión:</strong> Verificar el acceso a internet y refrescar la página del chat.</li>
+                            <li><strong>Si el modelo parece "alucinar":</strong> Recordar a los alumnos que deben verificar siempre la información y que XOLO puede ayudar a identificar errores lógicos.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo Interactivo con IA ⏰ 3 minutos</h2>
-                <p>Establecer tono profesional, conectar con el tema y activar a Xolo con perfil e intereses.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y foco ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 1) Presenta el tema y el valor profesional.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Equipo: hoy exploraremos cómo la Inteligencia Artificial está redefiniendo el futuro del trabajo y cómo podemos colaborar eficazmente con ella. Nuestro objetivo es que diseñen un <strong>'Kit de Inicio de IA'</strong> para una profesión, demostrando cómo la <strong>IA</strong> puede amplificar las <strong>capacidades humanas</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación con Xolo ⏰ 2 minutos</h3>
-                            <p>Cada estudiante abre su chat con Xolo y envía saludo con perfil de aprendizaje e intereses + referencia a la misión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, vamos a activar a nuestro asistente de IA, <strong>Xolo</strong>. Envíenle un saludo con su <strong>perfil de aprendizaje</strong> e intereses, y hagan referencia a la <strong>misión</strong>. Por ejemplo, podrían escribir: <strong>'Hola Xolo, soy [Nombre]. Me interesa la música y la programación, y mi estilo de aprendizaje es muy visual. ¡Listo para la misión M01!'</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "Hoy aprenderán a hablar el lenguaje de la Inteligencia Artificial para potenciar su futuro.".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Ingeniería de Prompts y el Rol Humano.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A dominar la ingeniería de prompts para que la IA aumente su productividad sin perder su criterio humano.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros, médicos y creativos usan la IA para procesar información masiva, pero ellos toman las decisiones finales basadas en ética y contexto.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: “I Can Statement” + Desafío ⏰ 5-7 minutos</h2>
-                <p>Explicitar metas y presentar el reto que guiará la producción.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presenta el reto ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 2) Describe el reto y la meta observable.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El reto es diseñar un <strong>'Kit de Inicio de IA'</strong> para una profesión de su elección, que contenga <strong>prompts efectivos</strong> para tareas clave. Evaluaremos la <strong>claridad</strong> y <strong>especificidad</strong> de los prompts, y cómo demuestran el concepto de <strong>'aumento'</strong> de la capacidad humana por la IA.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Escribe tu “I Can” ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) Cada estudiante redacta 1 “I Can” concreto alineado al entregable.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo estructurar un prompt profesional con tarea, contexto y restricciones.</li>
+                            <li>Introduce el debate sobre qué tareas delegar a la IA y qué partes del trabajo requieren responsabilidad humana.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a reescribir intenciones vagas en versiones profesionales.</li>
+                            <li>Reflexionar sobre el propósito humano detrás de cada interacción con la IA.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Formula tu 'Puedo…' en 1 frase: <strong>acción + criterio + resultado</strong>. Por ejemplo: 'Puedo diseñar <strong>prompts</strong> que resuelvan problemas específicos de mi profesión elegida, utilizando la IA como una herramienta de <strong>aumento de productividad</strong>.'</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar la ingeniería de prompts para mejorar resultados y entender el rol humano frente a la IA.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Bienvenidos a su primera misión! Hoy vamos a descubrir cómo hablarle a la IA para obtener resultados increíbles. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre ingeniería de prompts y cómo usarla para aumentar su potencial. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle cómo pasar de una idea vaga a una instrucción profesional. XOLO les explicará por qué su criterio humano es lo más importante en este proceso. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. ¡Adelante, saluden a XOLO y comiencen!</p>
                     </div>
                 </div>
             </div>
-            
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 10-12 minutos</h2>
-                <p>Formalizar criterios y/o framework antes de producir.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Marco conceptual ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Introduce verbalmente los conceptos clave que se demostrarán a continuación: <strong>ingeniería de prompts</strong> y la dicotomía <strong>Aumento vs. Reemplazo</strong>.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Para colaborar eficazmente con una IA, debemos dominar dos ideas. La primera es la <strong>ingeniería de prompts</strong>: el arte de dar instrucciones claras y efectivas. La segunda es ver a la IA como una herramienta de <strong>Aumento</strong>, que expande nuestras habilidades, en lugar de un <strong>Reemplazo</strong>. Ahora, usemos a <strong>Xolo</strong> para que nos lo explique.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Demostración en vivo con Xolo ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Modela en vivo cómo pedirle a Xolo que explique los conceptos clave de la sesión utilizando un prompt bien estructurado.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Voy a proyectar mi conversación con <strong>Xolo</strong> y usaré este prompt para que nos explique los conceptos clave. Observen cómo está estructurado: <strong>“Xolo, quiero entender cómo la ingeniería de prompts puede mejorar mi trabajo futuro. Luego explícame qué significa ‘Aumento vs. Reemplazo’ y cómo puedo usar la IA como una herramienta que amplifique mis capacidades sin sustituirme.”</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los dispositivos conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Análisis de la respuesta ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Guía una discusión breve sobre la respuesta de Xolo para consolidar la comprensión de los conceptos.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a diseñar un Kit de Inicio de IA personalizado para una profesión elegida.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO para definir 3 tareas diarias de una carrera y crear prompts específicos.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Validar los prompts en una plataforma de IA y ajustar según los resultados obtenidos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a diseñar mi “Kit de Inicio de IA” para una profesión/carrera que elija. Guíame a definir 3 tareas reales del día a día y a crear una primera lista de prompts para cada una. Luego acompáñame a iterar: mejora claridad, restricciones y formato de respuesta. Ejecuta: entrega mi kit final con 6–10 prompts listos para usar y una nota breve que explique cómo cada prompt “aumenta” mi capacidad sin reemplazar mi criterio."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Analicemos la respuesta de Xolo. ¿Qué fue lo más claro sobre su explicación de <strong>'Aumento vs. Reemplazo'</strong>? ¿Cómo creen que la calidad de mi prompt influyó en la calidad de su respuesta? Esto es la <strong>ingeniería de prompts</strong> en acción.</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El prompt profesional generó una respuesta más útil que el vago?</li>
+                            <li>¿Qué sucede si cambias el "resultado esperado" de una lista a un párrafo?</li>
+                            <li>¿La IA respeta todas las restricciones que incluiste en tu kit?</li>
+                            <li>¿Cómo aplicas tu criterio humano para decidir si el resultado de la IA es ético y correcto?</li>
+                            <li>¿En qué situaciones delegar una tarea a la IA podría ser un riesgo si no hay supervisión humana?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a diseñar un Kit de Inicio de IA para la carrera que más les interese. Imaginen que son arquitectos o analistas de datos; ¿cómo les ayudaría la IA? Sigan el flujo con XOLO: ideen las tareas, definan los prompts y luego pruébenlos en ChatGPT o Gemini. Por ejemplo, podrían crear un prompt para resumir normativas técnicas o para idear conceptos de diseño. No olviden las preguntas de experimentación para ver cómo cambia el resultado y qué parte del trabajo sigue siendo suya. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar sus instrucciones. ¡A construir su futuro!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con mi kit básico. ¿Puedes enseñarme cómo hacer que mis prompts usen una técnica de 'cadena de pensamiento' para que la IA explique su razonamiento paso a paso?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Brain Spark ⏰ 17-20 minutos</h2>
-                <p>Producir el entregable tangible del Micro-Proyecto.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Producción ⏰ 12 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Indica el producto específico (Kit de Inicio de IA con prompts) y checklist de calidad. Tiempo de trabajo autónomo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">N/A</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Iteración ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Pide una mejora concreta: refinar prompts para mayor especificidad o para incluir un rol/persona para la IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Antes de cerrar: valida que cada <strong>prompt</strong> incluya un <strong>rol para la IA</strong> y un <strong>formato de salida deseado</strong>. Si no se cumple, ajusta y vuelve a probar con tu <strong>LLM</strong>. Les recomiendo usar <strong>ChatGPT (GPT-3.5 o 4)</strong>, <strong>Claude</strong> o <strong>Gemini</strong>, ya que son excelentes para este tipo de tareas.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Evidencia ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Solicita evidencia: documento con el "Kit de Inicio de IA".</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué tareas decidió delegar y cómo sus prompts aseguran un resultado de calidad.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué tareas de tu carrera elegida crees que la IA realiza mejor? ¿Qué te sorprendió de la precisión necesaria en los prompts?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Sube tu 'Kit de Inicio de IA' al canal indicado. Nombra tu archivo: <strong>M01_KitIA_[NombreApellido]_[ProfesionElegida].pdf</strong>.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi kit de IA optimiza la creación de reportes y análisis. Me sorprendió que al definir el rol de la IA, las respuestas son mucho más profesionales."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: GNIUS STORM ⏰ 5 minutos</h2>
-                <p>Exhibir resultados y cerrar con síntesis accionable.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Showcase relámpago ⏰ 3 minutos</h3>
-                            <p>2–3 equipos/personas muestran evidencia clave (30–45 s c/u).</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Describe tu <strong>'Kit de Inicio de IA'</strong> en 30 segundos: qué profesión elegiste, un <strong>prompt clave</strong> y cómo demuestra el <strong>aumento de la IA</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Cierre ejecutivo ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Entrega síntesis: 1 aprendizaje clave + 1 criterio que más impacto tuvo + siguiente paso fuera del aula.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Síntesis: Hoy aprendimos que la <strong>ingeniería de prompts</strong> es la clave para desatar el potencial de la <strong>IA como socio</strong>. El criterio clave que marcó la diferencia fue la <strong>especificidad</strong> y la <strong>asignación de roles a la IA</strong> en nuestros prompts. Siguiente paso aplicado: Utilicen esta habilidad en cualquier tarea que requiera <strong>investigación, redacción o ideación</strong>, transformando sus interacciones con la IA de <strong>búsquedas pasivas</strong> a <strong>colaboraciones activas y dirigidas</strong>.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
@@ -289,4 +441,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
